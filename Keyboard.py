@@ -58,8 +58,8 @@ while True:
                 cv2.putText(img, button.text, (x + 20, y + 65),
                             cv2.FONT_HERSHEY_PLAIN, 4, (255, 255, 255), 4)
 
-                l,_,_= detector.findDistance(8,12,img, draw= False)
-                #print(l)
+                length= detector.findDistance(8,12,img, draw= False)
+                #print(length)
 
                 ## When Clicked
                 if l < 30:
